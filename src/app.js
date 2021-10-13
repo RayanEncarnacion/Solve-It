@@ -11,3 +11,5 @@ AOS.init({
   anchorPlacement: "top-bottom",
   once: true,
 });
+
+console.log("Everything working!");

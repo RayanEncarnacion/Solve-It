@@ -18,11 +18,9 @@ function toogleMenu() {
 }
 
 export default function () {
-  // Display menu after it moved to the left
-  setTimeout(() => {
-    menu.classList.remove("hidden");
-    menu.classList.add("flex");
-  }, 300);
+  menu.classList.remove("hidden");
+  menu.classList.add("flex");
+
   // Toggle on links get clicked
   menu.addEventListener("click", (e) => {
     if (!e.target.classList.contains("menu-link")) return;
