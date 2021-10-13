@@ -38,7 +38,7 @@ nav .flex {
 
 @media (min-width: 640px) {
   .swiper {
-    height: 450px;
+    height: 400px;
   }
 }
 @media (min-width: 640px) {
@@ -68,7 +68,7 @@ nav .flex {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1800px) {
   .swiper {
     height: 600px;
   }

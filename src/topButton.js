@@ -1,4 +1,7 @@
 const topButton = document.querySelector(".top-button");
+
+if(window.location.href.slice(22, -5) === 'about-us') return
+
 const carousel = document.querySelector(".swiper");
 
 const displayButton = (e) => {

@@ -5,11 +5,12 @@ import toogleTopButton from "./topButton";
 import initMenu from "./toogleMenu";
 
 initMenu();
-toogleTopButton();
+
 AOS.init({
   duration: 800,
   anchorPlacement: "top-bottom",
   once: true,
 });
 
-console.log("Everything working!");
+if (window.location.href.slice(22, -5) === "about-us") return;
+toogleTopButton();
