@@ -62,6 +62,6 @@ nav .flex {
   }
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
-    right: 30px !important;
+    right: 50px !important;
   }
 }
