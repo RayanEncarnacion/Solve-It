@@ -1,0 +1,28 @@
+{
+  "name": "tail",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "postcss src/styles.css -o dist/styles.css --minify",
+    "prod": "NODE_ENV=production npx postcss src/styles.css -o dist/styles.css --minify",
+    "parcel": "parcel build src/index.html",
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "swiper": "^7.0.8"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "autoprefixer": "^10.3.7",
+    "cssnano": "^5.0.8",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.16"
+  }
+}
