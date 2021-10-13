@@ -18,8 +18,13 @@ function toogleMenu() {
 }
 
 export default function () {
-  menu.classList.remove("hidden");
-  menu.classList.add("flex");
+  menu.classList.add("hidden");
+  if (window.innerWidth >= 1024) return;
+
+  setTimeout(() => {
+    menu.classList.remove("hidden");
+    menu.classList.add("flex");
+  }, 400);
 
   // Toggle on links get clicked
   menu.addEventListener("click", (e) => {
