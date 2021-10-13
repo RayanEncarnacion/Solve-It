@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "postcss src/styles.css -o dist/styles.css --minify && parcel build src/index.html"
+    "build": "postcss src/styles.css -o dist/styles.css --minify && parcel build src/index.html",
+    "tailwind": "tailwindcss -i src/styles.css -o dist/styles.css",
+    "start": "parcel src/index.html"
   },
   "keywords": [],
   "author": "",

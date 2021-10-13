@@ -1,78 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone&family=Hind+Siliguri&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../dist/styles.css" />
-    <link rel="stylesheet" href="./customStyles.css" />
-    <script type="module" src="./app.js"></script>
-    <script type="module" src="./toogleMenu.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone&family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.e2efe943.css">
+    <link rel="stylesheet" href="/index.f6b7e9f2.css">
+    <script src="/index.10fa75bc.js" defer=""></script>
+    <script src="/index.10fa75bc.js" defer=""></script>
     <title>Document</title>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
   <body class="overflow-x-hidden">
-    <div
-      class="relative font-primary text-dark bg-light"
-      style="min-width: 100vw"
-    >
+    <div class="relative font-primary text-dark bg-light" style="min-width: 100vw">
       <!--  Top -->
       <span id="top" class="absolute top-0"></span>
       <!-- Navigation -->
       <div class="fixed top-0 left-0 w-full" style="z-index: 100">
         <nav class="" style="background-color: rgba(255, 255, 255, 0.98)">
-          <div
-            class="flex justify-between items-center px-4 py-2 mx-auto sm:px-8"
-          >
-            <a
-              href="/"
-              class="
+          <div class="flex justify-between items-center px-4 py-2 mx-auto sm:px-8">
+            <a href="/" class="
                 block
                 no-underline
                 text-dark text-3xl
                 font-logo font-bold
                 lg:text-4xl
-              "
-              >Solve It</a
-            >
+              ">Solve It</a>
             <button class="menu-button text-xl lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
-            <ul
-              class="
+            <ul class="
                 hidden
                 text-dark
                 font-bold
                 text-sm
                 h-full
                 lg:flex lg:items-center lg:gap-8
-              "
-            >
+              ">
               <li class="cursor-pointer hover:text-drk-accent">
                 <a href="#about">About</a>
               </li>
@@ -88,8 +58,7 @@
               <li class="hover:text-drk-accent">
                 <a class="cursor-pointer" href="#contact">Contact us</a>
               </li>
-              <li
-                class="
+              <li class="
                   top-button
                   hidden
                   bg-drk-accent
@@ -101,8 +70,7 @@
                   justify-center
                   border-2 border-accent
                   hover:bg-light hover:text-accent hover:border-drk-accent
-                "
-              >
+                ">
                 <a href="#top"><i class="fas fa-arrow-up"></i></a>
               </li>
             </ul>
@@ -111,8 +79,7 @@
         </nav>
         <!-- Small screens menu -->
 
-        <div
-          class="
+        <div class="
             menu
             hidden
             absolute
@@ -127,21 +94,17 @@
             justify-center
             items-center
             text-dark
-          "
-          style="
-            min-height: 100vh;
-            z-index: 1000;
-            background-color: rgba(255, 255, 255, 0.98);
-          "
-        >
+          " style="min-height: 100vh;
+
+z-index: 1000;
+
+background-color: rgba(255, 255, 255, 0.98);">
           <ul class="text-lg text-center space-y-8 -mt-32 font-bold uppercase">
             <li class="cursor-pointer hover:text-accent">
               <a class="cursor-pointer menu-link" href="#about">About</a>
             </li>
             <li class="cursor-pointer hover:text-accent">
-              <a class="cursor-pointer menu-link" href="#industries"
-                >Industries</a
-              >
+              <a class="cursor-pointer menu-link" href="#industries">Industries</a>
             </li>
             <li class="cursor-pointer hover:text-accent">
               <a class="cursor-pointer menu-link" href="#services">Services</a>
@@ -152,8 +115,7 @@
             <li class="hover:text-accent">
               <a class="cursor-pointer menu-link" href="#contact">Contact us</a>
             </li>
-            <li
-              class="
+            <li class="
                 top-button
                 hidden
                 bg-drk-accent
@@ -165,8 +127,7 @@
                 justify-center
                 border-2 border-accent
                 hover:bg-light hover:text-accent hover:border-drk-accent
-              "
-            >
+              ">
               <a href="#top"><i class="fas fa-arrow-up"></i></a>
             </li>
           </ul>
@@ -190,8 +151,7 @@
           <!-- First Slide -->
 
           <div class="swiper-slide bg-slide-1 bg-center bg-cover text-light">
-            <div
-              class="
+            <div class="
                 w-max
                 relative
                 top-14
@@ -199,17 +159,14 @@
                 bg-dark bg-opacity-60
                 p-4
                 lg:left-24
-              "
-            >
+              ">
               <h2 class="font-titles text-xl">Solving each puzzle</h2>
               <p class="hidden max-w-xs text-base sm:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 deleniti voluptate commodi?
               </p>
 
-              <a
-                href="#"
-                class="
+              <a href="#" class="
                   uppercase
                   block
                   no-underline
@@ -222,19 +179,13 @@
                   font-bold
                   border border-transparent
                   hover:bg-drk-accent hover:border-light
-                "
-                >Read more</a
-              >
+                ">Read more</a>
             </div>
           </div>
 
           <!-- Second slide -->
-          <div
-            class="swiper-slide bg-slide-2 bg-center bg-cover text-light"
-            style="width: 400px"
-          >
-            <div
-              class="
+          <div class="swiper-slide bg-slide-2 bg-center bg-cover text-light" style="width: 400px">
+            <div class="
                 w-max
                 relative
                 top-14
@@ -242,16 +193,13 @@
                 bg-dark bg-opacity-60
                 p-4
                 lg:left-24
-              "
-            >
+              ">
               <h2 class="font-titles text-xl">Helping your team</h2>
               <p class="hidden max-w-xs text-base sm:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 deleniti voluptate commodi?
               </p>
-              <a
-                href="#"
-                class="
+              <a href="#" class="
                   uppercase
                   block
                   no-underline
@@ -264,18 +212,12 @@
                   font-bold
                   border border-transparent
                   hover:bg-drk-accent hover:border-light
-                "
-                >Read more</a
-              >
+                ">Read more</a>
             </div>
           </div>
           <!-- Third slide -->
-          <div
-            class="swiper-slide bg-slide-3 bg-center bg-cover text-light"
-            style="width: 400px"
-          >
-            <div
-              class="
+          <div class="swiper-slide bg-slide-3 bg-center bg-cover text-light" style="width: 400px">
+            <div class="
                 w-max
                 relative
                 top-14
@@ -283,16 +225,13 @@
                 bg-dark bg-opacity-60
                 p-4
                 lg:left-24
-              "
-            >
+              ">
               <h2 class="font-titles text-xl">Going through all the math</h2>
               <p class="hidden max-w-xs text-base sm:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
                 deleniti voluptate commodi?
               </p>
-              <a
-                href="#"
-                class="
+              <a href="#" class="
                   uppercase
                   block
                   no-underline
@@ -305,19 +244,13 @@
                   font-bold
                   border border-transparent
                   hover:bg-drk-accent hover:border-light
-                "
-                >Read more</a
-              >
+                ">Read more</a>
             </div>
           </div>
 
           <!-- Fourth slide -->
-          <div
-            class="swiper-slide bg-slide-4 bg-center bg-cover text-light"
-            style="width: 400px"
-          >
-            <div
-              class="
+          <div class="swiper-slide bg-slide-4 bg-center bg-cover text-light" style="width: 400px">
+            <div class="
                 w-max
                 relative
                 top-14
@@ -325,8 +258,7 @@
                 bg-dark bg-opacity-60
                 p-4
                 lg:left-24
-              "
-            >
+              ">
               <h2 class="font-titles text-xl">
                 Completing the task with a success
               </h2>
@@ -335,9 +267,7 @@
                 deleniti voluptate commodi?
               </p>
               <button>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     uppercase
                     block
                     no-underline
@@ -350,9 +280,7 @@
                     font-bold
                     border border-transparent
                     hover:bg-drk-accent hover:border-light
-                  "
-                  >Read more</a
-                >
+                  ">Read more</a>
               </button>
             </div>
           </div>
@@ -375,21 +303,15 @@
       <!-- about area -->
 
       <div id="about" class="py-12 px-4 sm:px-8 md:px-12 xl:py-20">
-        <div
-          class="
+        <div class="
             max-w-6xl
             mx-auto
             text-center
             sm:flex sm:items-center sm:justify-center sm:gap-8
             lg:gap-12
-          "
-        >
+          ">
           <div class="w-full h-full order-2">
-            <img
-              class="block object-cover w-10/12 mx-auto"
-              src="../public/israel-andrade-YI_9SivVt_s-unsplash.jpg"
-              alt=""
-            />
+            <img class="block object-cover w-10/12 mx-auto" src="/israel-andrade-YI_9SivVt_s-unsplash.7c0891ed.jpg" alt="">
           </div>
           <div class="mt-4 order-1 sm:w-full sm:text-left sm:mt-0">
             <h2 class="font-titles text-xl lg:text-2xl">
@@ -409,9 +331,7 @@
               repellendus saepe.
             </p>
             <button>
-              <a
-                href="#"
-                class="
+              <a href="#" class="
                   uppercase
                   block
                   no-underline
@@ -425,9 +345,7 @@
                   shadow-lg
                   border-2 border-transparent
                   hover:bg-drk-accent hover:border-accent
-                "
-                >Read more</a
-              >
+                ">Read more</a>
             </button>
           </div>
         </div>
@@ -439,9 +357,7 @@
 
       <!-- Industries -->
 
-      <div
-        id="industries"
-        class="
+      <div id="industries" class="
           pt-12
           pb-24
           px-4
@@ -451,20 +367,16 @@
           sm:px-8
           md:px-12
           xl:pt-20
-        "
-      >
+        ">
         <!-- Overlay -->
-        <div
-          class="absolute w-full h-full top-0 left-0 bg-dark bg-opacity-80"
-        ></div>
+        <div class="absolute w-full h-full top-0 left-0 bg-dark bg-opacity-80"></div>
         <!--  -->
 
         <h1 class="font-titles text-3xl text-light relative xl:text-4xl">
           Industries
         </h1>
 
-        <div
-          class="
+        <div class="
             mx-auto
             max-w-xl
             grid grid-cols-2
@@ -474,77 +386,52 @@
             sm:gap-y-8 sm:gap-x-10
             md:mt-12
             xl:max-w-6xl xl:grid-cols-4 xl:mt-12
-          "
-        >
+          ">
           <!-- Cards -->
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-1.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-1.19971310.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Teamwork</h2>
             </div>
           </div>
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-2.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-2.a36aba73.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Math</h2>
             </div>
           </div>
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-3.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-3.6b1ef488.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Puzzle</h2>
             </div>
           </div>
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-4.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-4.a8072217.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Organization</h2>
             </div>
           </div>
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-5.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-5.7b674ae0.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Patience</h2>
             </div>
           </div>
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-6.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-6.c6db695d.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">No stress</h2>
             </div>
           </div>
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-7.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-7.daff08bb.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Strategy</h2>
             </div>
           </div>
-          <div
-            class="w-full h-44 p-2 pb-3 border border-light place-self-center"
-            style="max-width: 200px"
-          >
-            <img class="h-5/6 w-full" src="../public/industry-8.jpg" alt="" />
+          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+            <img class="h-5/6 w-full" src="/industry-8.9bb31811.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Rest</h2>
             </div>
@@ -559,9 +446,7 @@
       <!-- Services -->
 
       <div class="px-6 relative bg-light">
-        <div
-          id="services"
-          class="
+        <div id="services" class="
             w-11/12
             max-w-5xl
             mx-auto
@@ -571,10 +456,8 @@
             shadow-xl
             bg-light
             z-50
-          "
-        >
-          <h1
-            class="
+          ">
+          <h1 class="
               block
               bg-gray-100
               font-titles
@@ -583,14 +466,12 @@
               py-2
               shadow-sm
               xl:text-4xl
-            "
-          >
+            ">
             Services
           </h1>
 
           <!-- Cards container -->
-          <div
-            class="
+          <div class="
               max-w-4xl
               mx-auto
               p-8
@@ -599,24 +480,17 @@
               place-items-center
               sm:grid-cols-2
               lg:gap-12 lg:grid-cols-3
-            "
-          >
+            ">
             <!-- Cards -->
             <div class="w-48 text-center" style="max-width: 280px">
-              <img
-                class="w-2/12 mt-4 mx-auto"
-                src="../public/services-1.png"
-                alt=""
-              />
+              <img class="w-2/12 mt-4 mx-auto" src="/services-1.045f11be.png" alt="">
               <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
               <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
               <button>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     uppercase
                     block
@@ -631,26 +505,18 @@
                     border-2 border-transparent
                     hover:bg-drk-accent hover:border-accent
                     shadow-xl
-                  "
-                  >Read more</a
-                >
+                  ">Read more</a>
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img
-                class="w-2/12 mt-4 mx-auto"
-                src="../public/services-1.png"
-                alt=""
-              />
+              <img class="w-2/12 mt-4 mx-auto" src="/services-1.045f11be.png" alt="">
               <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
               <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
               <button>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     uppercase
                     block
@@ -665,26 +531,18 @@
                     border-2 border-transparent
                     hover:bg-drk-accent hover:border-accent
                     shadow-xl
-                  "
-                  >Read more</a
-                >
+                  ">Read more</a>
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img
-                class="w-2/12 mt-4 mx-auto"
-                src="../public/services-1.png"
-                alt=""
-              />
+              <img class="w-2/12 mt-4 mx-auto" src="/services-1.045f11be.png" alt="">
               <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
               <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
               <button>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     uppercase
                     block
@@ -699,26 +557,18 @@
                     border-2 border-transparent
                     hover:bg-drk-accent hover:border-accent
                     shadow-xl
-                  "
-                  >Read more</a
-                >
+                  ">Read more</a>
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img
-                class="w-2/12 mx-auto"
-                src="../public/services-2.png"
-                alt=""
-              />
+              <img class="w-2/12 mx-auto" src="/services-2.3e2fac06.png" alt="">
               <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
               <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
               <button>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     uppercase
                     block
@@ -733,26 +583,18 @@
                     border-2 border-transparent
                     hover:bg-drk-accent hover:border-accent
                     shadow-xl
-                  "
-                  >Read more</a
-                >
+                  ">Read more</a>
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img
-                class="w-2/12 mx-auto"
-                src="../public/services-3.png"
-                alt=""
-              />
+              <img class="w-2/12 mx-auto" src="/services-3.ff6fac2a.png" alt="">
               <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
               <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
               <button>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     uppercase
                     block
@@ -767,26 +609,18 @@
                     border-2 border-transparent
                     hover:bg-drk-accent hover:border-accent
                     shadow-xl
-                  "
-                  >Read more</a
-                >
+                  ">Read more</a>
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img
-                class="w-2/12 mx-auto"
-                src="../public/services-4.png"
-                alt=""
-              />
+              <img class="w-2/12 mx-auto" src="/services-4.6eea864b.png" alt="">
               <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
               <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
               <button>
-                <a
-                  href="#"
-                  class="
+                <a href="#" class="
                     relative
                     uppercase
                     block
@@ -801,9 +635,7 @@
                     border-2 border-transparent
                     hover:bg-drk-accent hover:border-accent
                     shadow-xl
-                  "
-                  >Read more</a
-                >
+                  ">Read more</a>
               </button>
             </div>
 
@@ -816,9 +648,7 @@
       <!-- /////////////////////// -->
 
       <!-- Credit  -->
-      <div
-        id="credit"
-        class="
+      <div id="credit" class="
           pt-16
           pb-12
           px-4
@@ -829,30 +659,20 @@
           sm:px-8
           md:px-12
           xl:p-20
-        "
-      >
+        ">
         <!-- Overlay -->
-        <div
-          class="absolute w-full h-full top-0 left-0 bg-dark bg-opacity-80"
-        ></div>
+        <div class="absolute w-full h-full top-0 left-0 bg-dark bg-opacity-80"></div>
         <!--  -->
 
         <div class="text-center w-full relative mx-auto">
-          <img
-            class="w-3/12 sm:w-2/12 mx-auto"
-            src="../public/credit3x.png"
-            alt=""
-            style="max-width: 120px"
-          />
+          <img class="w-3/12 sm:w-2/12 mx-auto" src="/credit3x.524773cc.png" alt="" style="max-width: 120px">
           <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
           <p class="mt-1 mx-auto sm:max-w-md md:max-w-lg">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
             nesciunt repudiandae dicta facere, tempora magnam.
           </p>
           <button>
-            <a
-              href="#"
-              class="
+            <a href="#" class="
                 relative
                 uppercase
                 block
@@ -867,9 +687,7 @@
                 border border-transparent
                 hover:bg-drk-accent hover:border-light
                 shadow-xl
-              "
-              >Read more</a
-            >
+              ">Read more</a>
           </button>
         </div>
       </div>
@@ -881,8 +699,7 @@
 
       <div id="contact" class="py-12 px-6 bg-light text-center xl:py-20">
         <h1 class="font-titles text-2xl">Communicate with us</h1>
-        <div
-          class="
+        <div class="
             max-w-xl
             w-10/12
             mx-auto
@@ -890,11 +707,9 @@
             grid grid-cols-2 grid-row
             gap-4
             sm:grid-cols-4 sm:gap-x-4
-          "
-        >
+          ">
           <!-- Buttons -->
-          <button
-            class="
+          <button class="
               w-full
               py-2
               bg-yellow-300
@@ -905,15 +720,12 @@
               uppercase
               border-2 border-transparent
               hover:border-dark
-            "
-            style="max-width: 150px"
-          >
+            " style="max-width: 150px">
             <h2 class="font-bold text-sm">
               <i class="fas fa-phone-volume text-lg align-top pr-2"></i>Call us
             </h2>
           </button>
-          <button
-            class="
+          <button class="
               py-2
               bg-yellow-300
               hover:bg-yellow-500
@@ -924,15 +736,12 @@
               uppercase
               border-2 border-transparent
               hover:border-dark
-            "
-            style="max-width: 150px"
-          >
+            " style="max-width: 150px">
             <h2 class="font-bold text-sm">
               <i class="far fa-comments text-lg align-top pr-3"></i>Message us
             </h2>
           </button>
-          <button
-            class="
+          <button class="
               py-2
               bg-yellow-300
               hover:bg-yellow-500
@@ -943,15 +752,12 @@
               uppercase
               border-2 border-transparent
               hover:border-dark
-            "
-            style="max-width: 150px"
-          >
+            " style="max-width: 150px">
             <h2 class="font-bold text-sm">
               <i class="far fa-compass text-lg align-top pr-2"></i>Branches
             </h2>
           </button>
-          <button
-            class="
+          <button class="
               py-2
               bg-yellow-300
               hover:bg-yellow-500
@@ -962,9 +768,7 @@
               uppercase
               border-2 border-transparent
               hover:border-dark
-            "
-            style="max-width: 150px"
-          >
+            " style="max-width: 150px">
             <h2 class="font-bold text-sm">
               <i class="fab fa-whatsapp text-lg align-top pr-3"></i>WhatsApp
             </h2>
@@ -975,8 +779,7 @@
 
         <form action="/" class="mt-8">
           <div class="">
-            <input
-              class="
+            <input class="
                 block
                 w-9/12
                 max-w-xs
@@ -986,13 +789,8 @@
                 outline-none
                 border-dark
                 text-dark text-sm
-              "
-              type="text"
-              name="name"
-              placeholder="Full Name"
-            />
-            <input
-              class="
+              " type="text" name="name" placeholder="Full Name">
+            <input class="
                 block
                 w-9/12
                 max-w-xs
@@ -1003,13 +801,8 @@
                 outline-none
                 border-dark
                 text-dark text-sm
-              "
-              type="text"
-              name="email"
-              placeholder="Email"
-            />
-            <input
-              class="
+              " type="text" name="email" placeholder="Email">
+            <input class="
                 block
                 w-9/12
                 max-w-xs
@@ -1020,15 +813,10 @@
                 outline-none
                 border-dark
                 text-dark text-sm
-              "
-              type="text"
-              name="message"
-              placeholder="Message"
-            />
+              " type="text" name="message" placeholder="Message">
           </div>
 
-          <input
-            class="
+          <input class="
               uppercase
               block
               mx-auto
@@ -1043,10 +831,7 @@
               border border-transparent
               hover:bg-drk-accent hover:border-light
               shadow-xl
-            "
-            type="submit"
-            value="SEND"
-          />
+            " type="submit" value="SEND">
         </form>
       </div>
 
@@ -1057,19 +842,14 @@
       <!-- Footer -->
 
       <footer class="py-12 px-6 bg-dark bg-opacity-90 text-light">
-        <a
-          href="/"
-          class="block no-underline text-4xl font-logo font-bold text-center"
-          >Solve It</a
-        >
+        <a href="/" class="block no-underline text-4xl font-logo font-bold text-center">Solve It</a>
         <p class="text-light text-center font-titles mt-2 text-lg">
           The best app for problem solving
         </p>
 
         <!-- Social media icons -->
         <div class="mt-8 flex gap-4 justify-center items-center text-lg">
-          <i
-            class="
+          <i class="
               fab
               fa-facebook-f
               cursor-pointer
@@ -1077,10 +857,8 @@
               px-4
               border border-light
               hover:border-accent hover:text-accent
-            "
-          ></i>
-          <i
-            class="
+            "></i>
+          <i class="
               fab
               fa-instagram
               cursor-pointer
@@ -1088,10 +866,8 @@
               px-4
               border border-light
               hover:border-accent hover:text-accent
-            "
-          ></i>
-          <i
-            class="
+            "></i>
+          <i class="
               fab
               fa-linkedin-in
               cursor-pointer
@@ -1099,15 +875,13 @@
               px-4
               border border-light
               hover:border-accent hover:text-accent
-            "
-          ></i>
+            "></i>
         </div>
         <p class="copyright text-center mt-8">@ 2021 Rayan Encarnación</p>
       </footer>
       <!-- Footer end -->
 
-      <span
-        class="
+      <span class="
           top-button
           fixed
           bottom-8
@@ -1123,9 +897,7 @@
           border-2 border-accent
           hover:bg-light hover:text-accent hover:border-drk-accent
           lg:hidden
-        "
-        style="z-index: 80"
-      >
+        " style="z-index: 80">
         <a href="#top"><i class="fas fa-arrow-up"></i></a>
       </span>
     </div>

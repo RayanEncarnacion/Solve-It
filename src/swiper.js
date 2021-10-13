@@ -1,9 +1,7 @@
 import Swiper from "swiper/swiper-bundle";
 
 export const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
   speed: 800,
-  spaceBetween: 100,
   loop: true,
   effect: "fade",
   autoplay: {
