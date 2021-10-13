@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "postcss src/styles.css -o dist/styles.css --minify",
-    "prod": "NODE_ENV=production npx postcss src/styles.css -o dist/styles.css --minify",
-    "parcel": "parcel build src/index.html",
-    "start": "parcel src/index.html"
+    "build": "postcss src/styles.css -o dist/styles.css --minify && parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
