@@ -4,9 +4,11 @@
 @import "../node_modules/swiper/modules/effect-fade/effect-fade.min.css";
 @import "../node_modules/swiper/modules/autoplay/autoplay.min.css";
 
-root {
+:root {
   --swiper-theme-color: hsl(0, 0%, 10%) !important;
+  overflow-x: hidden !important;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -63,5 +65,11 @@ nav .flex {
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     right: 50px !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .swiper {
+    height: 600px;
   }
 }

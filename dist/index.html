@@ -15,13 +15,30 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
-  <body class="overflow-x-hidden">
-    <div class="relative font-primary text-dark bg-light" style="min-width: 100vw">
-      <!--  Top -->
-      <span id="top" class="absolute top-0"></span>
+  <body class="relative">
+    <div class="relative w-screen font-primary text-dark bg-light min-h-screen">
+      <span data-aos="zoom-in" class="
+          to-top
+          fixed
+          bottom-8
+          right-3
+          bg-drk-accent
+          text-light
+          w-7
+          h-7
+          rounded-full
+          flex
+          items-center
+          justify-center
+          border-2 border-accent
+          hover:bg-light hover:text-accent hover:border-drk-accent
+          lg:hidden
+        " style="z-index: 80">
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+      </span>
       <!-- Navigation -->
       <div class="fixed top-0 left-0 w-full" style="z-index: 100">
-        <nav class="" style="background-color: rgba(255, 255, 255, 0.98)">
+        <nav style="background-color: rgba(255, 255, 255, 0.98)">
           <div class="flex justify-between items-center px-4 py-2 mx-auto sm:px-8">
             <a href="/" class="
                 block
@@ -115,35 +132,20 @@ background-color: rgba(255, 255, 255, 0.98);">
             <li class="hover:text-accent">
               <a class="cursor-pointer menu-link" href="#contact">Contact us</a>
             </li>
-            <li class="
-                top-button
-                hidden
-                bg-drk-accent
-                text-light
-                w-8
-                h-8
-                rounded-full
-                items-center
-                justify-center
-                border-2 border-accent
-                hover:bg-light hover:text-accent hover:border-drk-accent
-              ">
-              <a href="#top"><i class="fas fa-arrow-up"></i></a>
-            </li>
           </ul>
         </div>
 
         <!-- End of menu -->
       </div>
 
-      <!-- End of navigation -->-
+      <!-- End of navigation -->
 
       <!-- ///////////// -->
 
       <!-- Swiper Carousel -->
 
       <!-- Slider main container -->
-      <div class="swiper h-80">
+      <div class="swiper h-80" data-aos="zoom-out-right">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -151,14 +153,14 @@ background-color: rgba(255, 255, 255, 0.98);">
           <!-- First Slide -->
 
           <div class="swiper-slide bg-slide-1 bg-center bg-cover text-light">
-            <div class="
+            <div data-aos="zoom-in" data-aos-delay="400" class="
                 w-max
                 relative
                 top-14
                 left-10
                 bg-dark bg-opacity-60
                 p-4
-                lg:left-24
+                lg:left-24 lg:top-20
               ">
               <h2 class="font-titles text-xl">Solving each puzzle</h2>
               <p class="hidden max-w-xs text-base sm:block">
@@ -192,7 +194,7 @@ background-color: rgba(255, 255, 255, 0.98);">
                 left-10
                 bg-dark bg-opacity-60
                 p-4
-                lg:left-24
+                lg:left-24 lg:top-20
               ">
               <h2 class="font-titles text-xl">Helping your team</h2>
               <p class="hidden max-w-xs text-base sm:block">
@@ -224,7 +226,7 @@ background-color: rgba(255, 255, 255, 0.98);">
                 left-10
                 bg-dark bg-opacity-60
                 p-4
-                lg:left-24
+                lg:left-24 lg:top-20
               ">
               <h2 class="font-titles text-xl">Going through all the math</h2>
               <p class="hidden max-w-xs text-base sm:block">
@@ -257,7 +259,7 @@ background-color: rgba(255, 255, 255, 0.98);">
                 left-10
                 bg-dark bg-opacity-60
                 p-4
-                lg:left-24
+                lg:left-24 lg:top-20
               ">
               <h2 class="font-titles text-xl">
                 Completing the task with a success
@@ -286,11 +288,11 @@ background-color: rgba(255, 255, 255, 0.98);">
           </div>
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination" data-aos="fade-down" data-aos-delay="400"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev" data-aos="fade-right" data-aos-delay="400"></div>
+        <div class="swiper-button-next" data-aos="fade-left" data-aos-delay="400"></div>
 
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
@@ -311,26 +313,33 @@ background-color: rgba(255, 255, 255, 0.98);">
             lg:gap-12
           ">
           <div class="w-full h-full order-2">
-            <img class="block object-cover w-10/12 mx-auto" src="/israel-andrade-YI_9SivVt_s-unsplash.7c0891ed.jpg" alt="">
+            <img data-aos="flip-right" data-aos-delay="700" class="block object-cover w-10/12 mx-auto" src="/israel-andrade-YI_9SivVt_s-unsplash.7c0891ed.jpg" alt="">
           </div>
           <div class="mt-4 order-1 sm:w-full sm:text-left sm:mt-0">
-            <h2 class="font-titles text-xl lg:text-2xl">
+            <h2 data-aos="fade-right" class="font-titles text-xl lg:text-2xl">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
               dolorem.
             </h2>
-            <p class="text-sm mt-2 lg:text-base">
+            <p data-aos="fade-left" class="text-sm mt-2 lg:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               amet tempora, corporis qui voluptatibus nihil esse iusto, officia
               a corrupti eius necessitatibus labore perspiciatis accusantium non
               atque inventore commodi delectus velit ab eligendi cum dolorem.
               Voluptatibus animi accusantium dolorem ratione!
             </p>
-            <p class="hidden text-sm mt-2 lg:block lg:text-base">
+            <p data-aos="fade-right" class="
+                hidden
+                lg-info-paragraph
+                max-w-xshidden
+                text-sm
+                mt-2
+                lg:block lg:text-base
+              ">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
               dolor veniam nostrum rerum nam error? Ea consequatur deserunt
               repellendus saepe.
             </p>
-            <button>
+            <button data-aos="zoom-out-up">
               <a href="#" class="
                   uppercase
                   block
@@ -372,7 +381,7 @@ background-color: rgba(255, 255, 255, 0.98);">
         <div class="absolute w-full h-full top-0 left-0 bg-dark bg-opacity-80"></div>
         <!--  -->
 
-        <h1 class="font-titles text-3xl text-light relative xl:text-4xl">
+        <h1 data-aos="fade-right" class="font-titles text-3xl text-light relative xl:text-4xl">
           Industries
         </h1>
 
@@ -388,49 +397,49 @@ background-color: rgba(255, 255, 255, 0.98);">
             xl:max-w-6xl xl:grid-cols-4 xl:mt-12
           ">
           <!-- Cards -->
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-1.19971310.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Teamwork</h2>
             </div>
           </div>
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" data-aos-delay="200" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-2.a36aba73.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Math</h2>
             </div>
           </div>
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-3.6b1ef488.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Puzzle</h2>
             </div>
           </div>
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" data-aos-delay="200" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-4.a8072217.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Organization</h2>
             </div>
           </div>
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-5.7b674ae0.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Patience</h2>
             </div>
           </div>
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" data-aos-delay="200" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-6.c6db695d.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">No stress</h2>
             </div>
           </div>
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-7.daff08bb.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Strategy</h2>
             </div>
           </div>
-          <div class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
+          <div data-aos="fade-left" data-aos-delay="200" class="w-full h-44 p-2 pb-3 border border-light place-self-center" style="max-width: 200px">
             <img class="h-5/6 w-full" src="/industry-8.9bb31811.jpg" alt="">
             <div class="text-center bg-light pt-1">
               <h2 class="font-titles text-lg">Rest</h2>
@@ -457,7 +466,7 @@ background-color: rgba(255, 255, 255, 0.98);">
             bg-light
             z-50
           ">
-          <h1 class="
+          <h1 data-aos="zoom-in" class="
               block
               bg-gray-100
               font-titles
@@ -483,13 +492,15 @@ background-color: rgba(255, 255, 255, 0.98);">
             ">
             <!-- Cards -->
             <div class="w-48 text-center" style="max-width: 280px">
-              <img class="w-2/12 mt-4 mx-auto" src="/services-1.045f11be.png" alt="">
-              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
-              <p class="mt-2 text-sm">
+              <img data-aos="fade" class="w-2/12 mt-4 mx-auto" src="/services-1.045f11be.png" alt="">
+              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
+                Lorem, ipsum dolor.
+              </h2>
+              <p data-aos="fade-left" class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button>
+              <button data-aos="zoom-out">
                 <a href="#" class="
                     relative
                     uppercase
@@ -509,13 +520,15 @@ background-color: rgba(255, 255, 255, 0.98);">
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img class="w-2/12 mt-4 mx-auto" src="/services-1.045f11be.png" alt="">
-              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
-              <p class="mt-2 text-sm">
+              <img data-aos="fade" class="w-2/12 mt-4 mx-auto" src="/services-2.3e2fac06.png" alt="">
+              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
+                Lorem, ipsum dolor.
+              </h2>
+              <p data-aos="fade-left" class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button>
+              <button data-aos="zoom-out">
                 <a href="#" class="
                     relative
                     uppercase
@@ -535,13 +548,15 @@ background-color: rgba(255, 255, 255, 0.98);">
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img class="w-2/12 mt-4 mx-auto" src="/services-1.045f11be.png" alt="">
-              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
-              <p class="mt-2 text-sm">
+              <img data-aos="fade" class="w-2/12 mt-4 mx-auto" src="/services-3.ff6fac2a.png" alt="">
+              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
+                Lorem, ipsum dolor.
+              </h2>
+              <p data-aos="fade-left" class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button>
+              <button data-aos="zoom-out">
                 <a href="#" class="
                     relative
                     uppercase
@@ -561,13 +576,15 @@ background-color: rgba(255, 255, 255, 0.98);">
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img class="w-2/12 mx-auto" src="/services-2.3e2fac06.png" alt="">
-              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
-              <p class="mt-2 text-sm">
+              <img data-aos="fade" class="w-2/12 mt-4 mx-auto" src="/services-4.6eea864b.png" alt="">
+              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
+                Lorem, ipsum dolor.
+              </h2>
+              <p data-aos="fade-left" class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button>
+              <button data-aos="zoom-out">
                 <a href="#" class="
                     relative
                     uppercase
@@ -587,13 +604,15 @@ background-color: rgba(255, 255, 255, 0.98);">
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img class="w-2/12 mx-auto" src="/services-3.ff6fac2a.png" alt="">
-              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
-              <p class="mt-2 text-sm">
+              <img data-aos="fade" class="w-2/12 mt-4 mx-auto" src="/services-5.2c04b569.png" alt="">
+              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
+                Lorem, ipsum dolor.
+              </h2>
+              <p data-aos="fade-left" class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button>
+              <button data-aos="zoom-out">
                 <a href="#" class="
                     relative
                     uppercase
@@ -613,13 +632,15 @@ background-color: rgba(255, 255, 255, 0.98);">
               </button>
             </div>
             <div class="w-48 text-center" style="max-width: 280px">
-              <img class="w-2/12 mx-auto" src="/services-4.6eea864b.png" alt="">
-              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
-              <p class="mt-2 text-sm">
+              <img data-aos="fade" class="w-2/12 mt-4 mx-auto" src="/services-6.08d153e2.png" alt="">
+              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
+                Lorem, ipsum dolor.
+              </h2>
+              <p data-aos="fade-left" class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button>
+              <button data-aos="zoom-out">
                 <a href="#" class="
                     relative
                     uppercase
@@ -665,13 +686,15 @@ background-color: rgba(255, 255, 255, 0.98);">
         <!--  -->
 
         <div class="text-center w-full relative mx-auto">
-          <img class="w-3/12 sm:w-2/12 mx-auto" src="/credit3x.524773cc.png" alt="" style="max-width: 120px">
-          <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
-          <p class="mt-1 mx-auto sm:max-w-md md:max-w-lg">
+          <img data-aos="zoom-out-down" class="w-3/12 sm:w-2/12 mx-auto" src="/credit3x.524773cc.png" alt="" style="max-width: 120px">
+          <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
+            Lorem, ipsum dolor.
+          </h2>
+          <p data-aos="fade-left" class="mt-1 mx-auto sm:max-w-md md:max-w-lg">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
             nesciunt repudiandae dicta facere, tempora magnam.
           </p>
-          <button>
+          <button data-aos="zoom-out-up">
             <a href="#" class="
                 relative
                 uppercase
@@ -698,7 +721,9 @@ background-color: rgba(255, 255, 255, 0.98);">
       <!-- Contact -->
 
       <div id="contact" class="py-12 px-6 bg-light text-center xl:py-20">
-        <h1 class="font-titles text-2xl">Communicate with us</h1>
+        <h1 data-aos="fade-right" class="font-titles text-2xl">
+          Communicate with us
+        </h1>
         <div class="
             max-w-xl
             w-10/12
@@ -709,7 +734,7 @@ background-color: rgba(255, 255, 255, 0.98);">
             sm:grid-cols-4 sm:gap-x-4
           ">
           <!-- Buttons -->
-          <button class="
+          <button data-aos="zoom-out" class="
               w-full
               py-2
               bg-yellow-300
@@ -725,7 +750,7 @@ background-color: rgba(255, 255, 255, 0.98);">
               <i class="fas fa-phone-volume text-lg align-top pr-2"></i>Call us
             </h2>
           </button>
-          <button class="
+          <button data-aos="zoom-out" data-aos-delay="200" class="
               py-2
               bg-yellow-300
               hover:bg-yellow-500
@@ -741,7 +766,7 @@ background-color: rgba(255, 255, 255, 0.98);">
               <i class="far fa-comments text-lg align-top pr-3"></i>Message us
             </h2>
           </button>
-          <button class="
+          <button data-aos="zoom-out" class="
               py-2
               bg-yellow-300
               hover:bg-yellow-500
@@ -757,7 +782,7 @@ background-color: rgba(255, 255, 255, 0.98);">
               <i class="far fa-compass text-lg align-top pr-2"></i>Branches
             </h2>
           </button>
-          <button class="
+          <button data-aos="zoom-out" data-aos-delay="200" class="
               py-2
               bg-yellow-300
               hover:bg-yellow-500
@@ -775,11 +800,13 @@ background-color: rgba(255, 255, 255, 0.98);">
           </button>
         </div>
 
-        <h1 class="mt-8 font-titles text-2xl">Or Send us an email</h1>
+        <h1 data-aos="fade-right" class="mt-8 font-titles text-2xl">
+          Or Send us an email
+        </h1>
 
         <form action="/" class="mt-8">
           <div class="">
-            <input class="
+            <input data-aos="fade" class="
                 block
                 w-9/12
                 max-w-xs
@@ -790,7 +817,7 @@ background-color: rgba(255, 255, 255, 0.98);">
                 border-dark
                 text-dark text-sm
               " type="text" name="name" placeholder="Full Name">
-            <input class="
+            <input data-aos="fade" class="
                 block
                 w-9/12
                 max-w-xs
@@ -802,7 +829,7 @@ background-color: rgba(255, 255, 255, 0.98);">
                 border-dark
                 text-dark text-sm
               " type="text" name="email" placeholder="Email">
-            <input class="
+            <input data-aos="fade" class="
                 block
                 w-9/12
                 max-w-xs
@@ -816,7 +843,7 @@ background-color: rgba(255, 255, 255, 0.98);">
               " type="text" name="message" placeholder="Message">
           </div>
 
-          <input class="
+          <input data-aos="zoom-out-up" class="
               uppercase
               block
               mx-auto
@@ -842,14 +869,14 @@ background-color: rgba(255, 255, 255, 0.98);">
       <!-- Footer -->
 
       <footer class="py-12 px-6 bg-dark bg-opacity-90 text-light">
-        <a href="/" class="block no-underline text-4xl font-logo font-bold text-center">Solve It</a>
-        <p class="text-light text-center font-titles mt-2 text-lg">
+        <a data-aos="zoom-in" href="/" class="block no-underline text-4xl font-logo font-bold text-center">Solve It</a>
+        <p data-aos="fade-right" class="text-light text-center font-titles mt-2 text-lg">
           The best app for problem solving
         </p>
 
         <!-- Social media icons -->
         <div class="mt-8 flex gap-4 justify-center items-center text-lg">
-          <i class="
+          <i data-aos="fade-left" class="
               fab
               fa-facebook-f
               cursor-pointer
@@ -858,7 +885,7 @@ background-color: rgba(255, 255, 255, 0.98);">
               border border-light
               hover:border-accent hover:text-accent
             "></i>
-          <i class="
+          <i data-aos="fade-left" data-aos-delay="200" class="
               fab
               fa-instagram
               cursor-pointer
@@ -867,7 +894,7 @@ background-color: rgba(255, 255, 255, 0.98);">
               border border-light
               hover:border-accent hover:text-accent
             "></i>
-          <i class="
+          <i data-aos="fade-left" data-aos-delay="400" class="
               fab
               fa-linkedin-in
               cursor-pointer
@@ -877,29 +904,12 @@ background-color: rgba(255, 255, 255, 0.98);">
               hover:border-accent hover:text-accent
             "></i>
         </div>
-        <p class="copyright text-center mt-8">@ 2021 Rayan Encarnación</p>
+        <p class="copyright text-center mt-8">@2021 Rayan Encarnación</p>
       </footer>
       <!-- Footer end -->
 
-      <span class="
-          top-button
-          fixed
-          bottom-8
-          right-3
-          bg-drk-accent
-          text-light
-          w-7
-          h-7
-          rounded-full
-          flex
-          items-center
-          justify-center
-          border-2 border-accent
-          hover:bg-light hover:text-accent hover:border-drk-accent
-          lg:hidden
-        " style="z-index: 80">
-        <a href="#top"><i class="fas fa-arrow-up"></i></a>
-      </span>
+      <!--  Top -->
+      <span id="top" class="absolute top-0"></span>
     </div>
   </body>
 </html>

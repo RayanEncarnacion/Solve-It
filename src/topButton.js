@@ -19,7 +19,5 @@ const carouselObserver = new IntersectionObserver(displayButton, {
 });
 
 export default function () {
-  window.innerWidth >= 1024
-    ? carouselObserver.observe(carousel)
-    : smallScreenButton();
+  window.innerWidth >= 1024 ? carouselObserver.observe(carousel) : "";
 }
