@@ -1,6 +1,6 @@
 const topButton = document.querySelector(".top-button");
 
-if(window.location.href.slice(22, -5) === 'about-us') return
+if (window.location.href.slice(22, -5) !== "") return;
 
 const carousel = document.querySelector(".swiper");
 

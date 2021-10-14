@@ -12,5 +12,5 @@ AOS.init({
   once: true,
 });
 
-if (window.location.href.slice(22, -5) === "about-us") return;
+if (window.location.href.slice(22, -5) !== "") return;
 toogleTopButton();
