@@ -1,0 +1,25 @@
+:root {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-area {
+  min-height: 90vh !important;
+}
+
+.playground-area {
+  min-height: 80vh !important;
+}
+
+.answer::placeholder {
+  font-size: 0.8em !important;
+}
+
+@media (min-width: 1024px) {
+  .user-info {
+    max-width: 250px !important;
+  }
+}

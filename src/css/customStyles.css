@@ -1,0 +1,80 @@
+@import "../../node_modules/swiper/swiper.min.css";
+@import "../../node_modules/swiper/modules/navigation/navigation.min.css";
+@import "../../node_modules/swiper/modules/pagination/pagination.min.css";
+@import "../../node_modules/swiper/modules/effect-fade/effect-fade.min.css";
+@import "../../node_modules/swiper/modules/autoplay/autoplay.min.css";
+
+:root {
+  --swiper-theme-color: hsl(0, 0%, 10%) !important;
+  overflow-x: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav .flex {
+  max-width: 1600px;
+}
+
+.img-hover-zoom {
+  height: 305px; /* [1.1] Set it as per your need */
+  overflow: hidden !important; /* [1.2] Hide the overflowing of child elements */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: hsl(0, 0%, 97%);
+}
+
+.swiper-pagination-bullet {
+  background: hsl(0, 0%, 97%) !important;
+  opacity: 0.6 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background: hsl(183, 100%, 40%) !important ;
+}
+
+@media (min-width: 640px) {
+  .swiper {
+    height: 400px;
+  }
+}
+@media (min-width: 640px) {
+  #industries .grid .h-44 {
+    height: 200px !important;
+  }
+}
+@media (min-width: 768px) {
+  #industries .grid .h-44 {
+    height: 230px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    padding: 1rem;
+    font-size: 1.4rem !important;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 30px !important;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 50px !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .swiper {
+    height: 600px;
+  }
+}
