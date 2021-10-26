@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Solve It</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone&family=Hind+Siliguri&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/public/solve-it.svg" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/tailwind.css" />
+    <link rel="stylesheet" href="/src/css/main-area.css" />
+    <script type="module" src="/src/app.js"></script>
+    <script defer src="/src/js/requestHandlers/userDetails.js"></script>
+  </head>
+  <body style="overflow-x: hidden !important">
+    <!-- App container -->
+    <div class="w-screen bg-light" style="min-height: 100vh">
+      <!-- Navigation -->
+      <nav
+        class="
+          border-b border-gray-200
+          relative
+          pw-full
+          flex
+          items-center
+          justify-between
+          px-4
+          p-2
+          sm:px-8
+          lg:px-12
+        "
+      >
+        <button class="block">
+          <a href="../app.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 17l-5-5m0 0l5-5m-5 5h12"
+              /></svg
+          ></a>
+        </button>
+        <a
+          href="../app.html"
+          class="
+            block
+            no-underline
+            text-dark text-3xl
+            font-logo font-bold
+            lg:text-4xl
+          "
+          >Solve It</a
+        >
+        <button class="user-btn p-2 bg-gray-200 rounded-full z-50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+        </button>
+
+        <!-- ////////// -->
+
+        <!-- User info -->
+
+        <div
+          class="
+            user-info
+            absolute
+            pb-4
+            pt-14
+            bg-light
+            border border-b border-r-0 border-t-0 border-gray-200
+            top-0
+            right-0
+            transition-transform
+            duration-500
+            ease-in-out
+            transform
+            translate-x-full
+            w-5/12
+            justify-center
+            items-center
+            text-dark
+          "
+          style="z-index: 10"
+        >
+          <ul class="flex flex-col gap-y-2 items-center justify-center">
+            <li class="name">Name:</li>
+            <li class="position">Position:</li>
+            <li class="points">Points:</li>
+            <li class="solved">Solved:</li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Navigation end -->
+
+      <div
+        class="
+          w-full
+          flex flex-col
+          items-center
+          justify-center
+          px-6
+          mt-12
+          mx-auto
+          sm:mt-20 sm:w-10/12
+          xl:w-5/12
+        "
+        style="min-height: 60vh"
+      >
+        <h2 class="font-titles text-center text-2xl lg:text-4xl">
+          Your answer has been submitted!
+        </h2>
+        <p
+          class="text-sm text-center mt-2 font-bold lg:mt-4 lg:text-base"
+          style="max-width: 500px"
+        >
+          If is the correct answer the points will be added to your score after
+          checked by a supervisor.
+        </p>
+        <a
+          href="../app.html"
+          class="
+            font-bold
+            text-center
+            block
+            w-4/12
+            mx-auto
+            text-xs
+            uppercase
+            py-2
+            bg-accent
+            border-2 border-transparent
+            text-light
+            mt-4
+            md:text-sm
+            hover:bg-drk-accent hover:border-accent
+          "
+          style="max-width: 150px"
+          >View tickets</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Solve It</title>
+    <link rel="icon" href="/public/solve-it.svg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone&family=Hind+Siliguri&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/tailwind.css" />
+    <link rel="stylesheet" href="/src/css/main-area.css" />
+    <script defer src="../js/requestHandlers/ticketCreation.js"></script>
+  </head>
+  <body>
+    <nav
+      class="
+        border-b border-gray-200
+        relative
+        w-full
+        flex
+        items-center
+        justify-between
+        px-4
+        p-2
+        sm:px-8
+        lg:px-12
+      "
+    >
+      <a href="../app.html"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M11 17l-5-5m0 0l5-5m-5 5h12"
+          /></svg
+      ></a>
+      <a
+        href="../app.html"
+        class="
+          self-center
+          no-underline
+          text-dark text-3xl
+          font-logo font-bold
+          lg:text-4xl
+        "
+        >Solve It</a
+      >
+      <span class="block"></span>
+    </nav>
+
+    <!-- Form -->
+
+    <form
+      aria-autocomplete="none"
+      action=""
+      class="
+        form
+        mt-12
+        md:mt-32
+        w-9/12
+        py-8
+        shadow-sm
+        px-10
+        mx-auto
+        max-w-xs
+        border border-gray-200
+        md:py-8 md:shadow-lg
+      "
+      autocomplete="off"
+    >
+      <div>
+        <h2 class="font-titles text-2xl text-center mb-6">Create A Ticket</h2>
+        <label for="username" class="text-sm block">Name</label>
+        <input
+          required
+          type="text"
+          name="name"
+          class="
+            name
+            block
+            bg-transparent
+            border-b border-gray-300
+            pl-1
+            mb-2
+            text-sm
+            outline-none
+            w-full
+          "
+        />
+        <label for="explanation" class="text-sm block">Explanation</label>
+        <input
+          required
+          type="text"
+          name="explanation"
+          class="
+            explanation
+            block
+            bg-transparent
+            border-b border-gray-300
+            pl-1
+            mb-2
+            text-sm
+            outline-none
+            w-full
+          "
+        />
+
+        <label for="explanation" class="text-sm inline-block">Points</label>
+        <input
+          class="
+            points
+            inline-block
+            outline-none
+            border-b border-gray-300
+            w-12
+            ml-2
+            pl-2
+            mb-4
+          "
+          type="number"
+          name="points"
+          max="300"
+          min="10"
+        />
+        <div class="block mb-4">
+          <label for="urgency" class="text-sm inline-block">Urgency</label>
+          <select
+            name="urgency"
+            class="
+              urgency
+              inline-block
+              border-b border-gray-300
+              ml-2
+              text-sm
+              outline-none
+              text-center
+            "
+          >
+            <option value="Low">Low</option>
+            <option selected value="Normal">Normal</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="block">
+          <label for="type" class="text-sm inline-block">Type</label>
+          <select
+            name="type"
+            class="
+              type
+              inline-block
+              border-b border-gray-300
+              ml-2
+              text-sm
+              outline-none
+              text-center
+            "
+          >
+            <option value="Front End">Front end</option>
+            <option value="Back End">Back end</option>
+          </select>
+        </div>
+        <!-- Submit button -->
+        <input
+          type="submit"
+          value="SUBMIT"
+          class="
+            submit
+            uppercase
+            block
+            w-full
+            no-underline
+            px-6
+            py-2
+            text-light
+            font-bold
+            bg-accent
+            mt-8
+            lg:mt-10
+            text-sm
+            border border-transparent
+            hover:bg-drk-accent hover:border-light
+            shadow-xl
+            cursor-pointer
+          "
+        />
+      </div>
+    </form>
+  </body>
+</html>

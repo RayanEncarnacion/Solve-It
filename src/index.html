@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solve It</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone&family=Hind+Siliguri&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../public/styles.css" />
-    <link rel="stylesheet" href="./customStyles.css" />
-    <script type="module" src="./app.js"></script>
-    <title>Solve It</title>
-    <link rel="icon" href="../public/solve-it.svg" />
-
+    <link rel="stylesheet" href="/public/tailwind.css" />
+    <link rel="stylesheet" href="css/customStyles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="/public/solve-it.svg" />
+    <script type="module" src="index.js"></script>
   </head>
   <body class="relative" style="overflow-x: hidden !important">
     <!-- App container -->
@@ -43,6 +42,7 @@
           >
             <a
               href="/"
+              id="top"
               class="
                 block
                 no-underline
@@ -78,37 +78,75 @@
                 lg:flex lg:items-center lg:gap-8
               "
             >
-              <li class="cursor-pointer hover:text-drk-accent">
-                <a href="about-us.html">About</a>
-              </li>
-              <li class="cursor-pointer hover:text-drk-accent">
-                <a href="#industries">Industries</a>
-              </li>
-              <li class="cursor-pointer hover:text-drk-accent">
-                <a href="#services">Services</a>
-              </li>
-              <li class="cursor-pointer hover:text-drk-accent">
-                <a href="#credit">Credit</a>
-              </li>
-              <li class="hover:text-drk-accent">
-                <a class="cursor-pointer" href="#contact">Contact us</a>
+              <li
+                class="
+                  cursor-pointer
+                  transform
+                  hover:text-drk-accent hover:scale-110
+                "
+              >
+                <a href="html/about.html">About</a>
               </li>
               <li
                 class="
-                  top-button
-                  hidden
-                  bg-drk-accent
-                  text-light
-                  w-8
-                  h-8
-                  rounded-full
-                  items-center
-                  justify-center
-                  border-2 border-accent
-                  hover:bg-light hover:text-accent hover:border-drk-accent
+                  cursor-pointer
+                  transform
+                  hover:text-drk-accent hover:scale-110
                 "
               >
-                <a href="#top"><i class="fas fa-arrow-up"></i></a>
+                <a href="#industries">Industries</a>
+              </li>
+              <li
+                class="
+                  cursor-pointer
+                  transform
+                  hover:text-drk-accent hover:scale-110
+                "
+              >
+                <a href="#services">Services</a>
+              </li>
+              <li
+                class="
+                  cursor-pointer
+                  transform
+                  rm
+                  hover:text-drk-accent hover:scale-110
+                "
+              >
+                <a href="#credit">Credit</a>
+              </li>
+              <li
+                class="
+                  cursor-pointer
+                  transform
+                  rm
+                  hover:text-drk-accent hover:scale-110
+                "
+              >
+                <a href="#contact">Contact us</a>
+              </li>
+              <li
+                class="
+                  cursor-pointer
+                  transform
+                  rm
+                  hover:text-drk-accent hover:scale-110
+                "
+              >
+                <a href="html/login.html">Login</a>
+              </li>
+              <li
+                class="
+                  block
+                  w-max
+                  px-4
+                  py-2
+                  bg-accent
+                  text-light
+                  hover:text-drk-accent
+                "
+              >
+                <a class="cursor-pointer" href="html/register.html">JOIN US</a>
               </li>
             </ul>
           </div>
@@ -140,7 +178,9 @@
         >
           <ul class="text-lg text-center space-y-8 -mt-32 font-bold uppercase">
             <li class="cursor-pointer hover:text-accent">
-              <a class="cursor-pointer menu-link" href="#about">About</a>
+              <a class="cursor-pointer menu-link" href="html/about.html"
+                >About</a
+              >
             </li>
             <li class="cursor-pointer hover:text-accent">
               <a class="cursor-pointer menu-link" href="#industries"
@@ -169,7 +209,7 @@
       <!-- Swiper Carousel -->
 
       <!-- Slider main container -->
-      <div class="swiper h-80" data-aos="fade">
+      <div class="swiper h-80">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -178,8 +218,6 @@
 
           <div class="swiper-slide bg-slide-1 bg-center bg-cover text-light">
             <div
-              data-aos="zoom-in"
-              data-aos-delay="800"
               class="
                 w-max
                 relative
@@ -197,7 +235,7 @@
               </p>
 
               <a
-                href="about-us.html"
+                href="html/about.html"
                 class="
                   uppercase
                   block
@@ -239,7 +277,7 @@
                 deleniti voluptate commodi?
               </p>
               <a
-                href="about-us.html"
+                href="html/about.html"
                 class="
                   uppercase
                   block
@@ -280,7 +318,7 @@
                 deleniti voluptate commodi?
               </p>
               <a
-                href="about-us.html"
+                href="html/about.html"
                 class="
                   uppercase
                   block
@@ -325,7 +363,7 @@
               </p>
               <button>
                 <a
-                  href="about-us.html"
+                  href="html/about.html"
                   class="
                     uppercase
                     block
@@ -347,23 +385,11 @@
           </div>
         </div>
         <!-- If we need pagination -->
-        <div
-          class="swiper-pagination"
-          data-aos="fade-down"
-          data-aos-delay="400"
-        ></div>
+        <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div
-          class="swiper-button-prev"
-          data-aos="fade-right"
-          data-aos-delay="400"
-        ></div>
-        <div
-          class="swiper-button-next"
-          data-aos="fade-left"
-          data-aos-delay="400"
-        ></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
       <!-- End of Carousel -->
@@ -384,19 +410,17 @@
         >
           <div class="w-full h-full order-2">
             <img
-              data-aos="flip-right"
-              data-aos-delay="700"
-              class="block object-cover w-10/12 mx-auto"
-              src="../public/israel-andrade-YI_9SivVt_s-unsplash.jpg"
+              class="block object-cover mx-auto"
+              src="/public/images/israel-andrade-YI_9SivVt_s-unsplash.jpg"
               alt=""
             />
           </div>
-          <div class="mt-4 order-1 sm:w-full sm:text-left sm:mt-0">
-            <h2 data-aos="fade-right" class="font-titles text-xl lg:text-2xl">
+          <div class="mt-4 order-1 w-full sm:text-left sm:mt-0">
+            <h2 class="font-titles text-xl lg:text-2xl">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
               dolorem.
             </h2>
-            <p data-aos="fade-left" class="text-sm mt-2 lg:text-base">
+            <p class="text-sm mt-2 lg:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               amet tempora, corporis qui voluptatibus nihil esse iusto, officia
               a corrupti eius necessitatibus labore perspiciatis accusantium non
@@ -404,7 +428,6 @@
               Voluptatibus animi accusantium dolorem ratione!
             </p>
             <p
-              data-aos="fade-right"
               class="
                 hidden
                 lg-info-paragraph
@@ -418,9 +441,9 @@
               dolor veniam nostrum rerum nam error? Ea consequatur deserunt
               repellendus saepe.
             </p>
-            <button data-aos="zoom-out-up">
+            <button>
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -439,9 +462,9 @@
                 >join us</a
               >
             </button>
-            <button data-aos="zoom-out-up">
+            <button>
               <a
-                href="about-us.html"
+                href="html/about.html"
                 class="
                   uppercase
                   block
@@ -491,10 +514,7 @@
         ></div>
         <!--  -->
 
-        <h1
-          data-aos="fade-right"
-          class="font-titles text-3xl text-light relative xl:text-4xl"
-        >
+        <h1 class="font-titles text-3xl text-light relative xl:text-4xl">
           Industries
         </h1>
 
@@ -503,7 +523,7 @@
             mx-auto
             max-w-xl
             grid grid-cols-2
-            gap-y-6 gap-x-4
+            gap-6
             relative
             mt-8
             sm:gap-y-8 sm:gap-x-10
@@ -512,24 +532,20 @@
           "
         >
           <!-- Cards -->
-          <div
-            data-aos="fade-left"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-1.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-1.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">
               Teamwork
             </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -548,25 +564,18 @@
               >
             </button>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="200"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-2.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-2.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
-              Math
-            </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">Math</h2>
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -585,24 +594,20 @@
               >
             </button>
           </div>
-          <div
-            data-aos="fade-left"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-3.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-3.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">
               Puzzle
             </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -621,25 +626,20 @@
               >
             </button>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="200"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-4.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-4.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">
               Organization
             </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -658,24 +658,20 @@
               >
             </button>
           </div>
-          <div
-            data-aos="fade-left"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-5.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-5.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">
               Patience
             </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -694,25 +690,20 @@
               >
             </button>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="200"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-6.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-6.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">
               No stress
             </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -731,24 +722,20 @@
               >
             </button>
           </div>
-          <div
-            data-aos="fade-left"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-7.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-7.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">
               Strategy
             </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -767,25 +754,18 @@
               >
             </button>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="200"
-            class="w-full p-4 place-self-center border border-light"
-            style="max-width: 200px"
-          >
+          <div class="cards w-full place-self-center" style="max-width: 200px">
             <img
-              class="w-full h-24 md:h-32"
-              src="../public/industry-8.jpg"
+              class="w-full h-28 md:h-32"
+              src="/public/images/industry-8.jpg"
               alt=""
               style="min-height: 85px; max-height: 115px"
             />
 
-            <h2 class="font-titles text-lg text-center pt-1 text-light">
-              Rest
-            </h2>
-            <button data-aos="fade" data-aos-delay="100">
+            <h2 class="font-titles text-lg text-center pt-1 bg-light">Rest</h2>
+            <button class="w-full mt-2">
               <a
-                href="register.html"
+                href="html/register.html"
                 class="
                   uppercase
                   block
@@ -829,7 +809,6 @@
           "
         >
           <h1
-            data-aos="zoom-in"
             class="
               block
               bg-gray-100
@@ -858,23 +837,20 @@
             "
           >
             <!-- Cards -->
-            <div class="w-48 text-center" style="max-width: 280px">
+            <div class="cards w-48 text-center" style="max-width: 280px">
               <img
-                data-aos="fade"
                 class="w-2/12 mt-4 mx-auto"
-                src="../public/services-1.png"
+                src="/public/images/services-1.png"
                 alt=""
               />
-              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
-                Lorem, ipsum dolor.
-              </h2>
-              <p data-aos="fade-left" class="mt-2 text-sm">
+              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
+              <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button data-aos="zoom-out">
+              <button>
                 <a
-                  href="about-us.html"
+                  href="html/about.html"
                   class="
                     relative
                     uppercase
@@ -895,23 +871,20 @@
                 >
               </button>
             </div>
-            <div class="w-48 text-center" style="max-width: 280px">
+            <div class="cards w-48 text-center" style="max-width: 280px">
               <img
-                data-aos="fade"
                 class="w-2/12 mt-4 mx-auto"
-                src="../public/services-2.png"
+                src="/public/images/services-2.png"
                 alt=""
               />
-              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
-                Lorem, ipsum dolor.
-              </h2>
-              <p data-aos="fade-left" class="mt-2 text-sm">
+              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
+              <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button data-aos="zoom-out">
+              <button>
                 <a
-                  href="about-us.html"
+                  href="html/about.html"
                   class="
                     relative
                     uppercase
@@ -932,23 +905,20 @@
                 >
               </button>
             </div>
-            <div class="w-48 text-center" style="max-width: 280px">
+            <div class="cards w-48 text-center" style="max-width: 280px">
               <img
-                data-aos="fade"
                 class="w-2/12 mt-4 mx-auto"
-                src="../public/services-3.png"
+                src="/public/images/services-3.png"
                 alt=""
               />
-              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
-                Lorem, ipsum dolor.
-              </h2>
-              <p data-aos="fade-left" class="mt-2 text-sm">
+              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
+              <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button data-aos="zoom-out">
+              <button>
                 <a
-                  href="about-us.html"
+                  href="html/about.html"
                   class="
                     relative
                     uppercase
@@ -969,23 +939,20 @@
                 >
               </button>
             </div>
-            <div class="w-48 text-center" style="max-width: 280px">
+            <div class="cards w-48 text-center" style="max-width: 280px">
               <img
-                data-aos="fade"
                 class="w-2/12 mt-4 mx-auto"
-                src="../public/services-4.png"
+                src="/public/images/services-4.png"
                 alt=""
               />
-              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
-                Lorem, ipsum dolor.
-              </h2>
-              <p data-aos="fade-left" class="mt-2 text-sm">
+              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
+              <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button data-aos="zoom-out">
+              <button>
                 <a
-                  href="about-us.html"
+                  href="html/about.html"
                   class="
                     relative
                     uppercase
@@ -1006,23 +973,20 @@
                 >
               </button>
             </div>
-            <div class="w-48 text-center" style="max-width: 280px">
+            <div class="cards w-48 text-center" style="max-width: 280px">
               <img
-                data-aos="fade"
                 class="w-2/12 mt-4 mx-auto"
-                src="../public/services-5.png"
+                src="/public/images/services-5.png"
                 alt=""
               />
-              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
-                Lorem, ipsum dolor.
-              </h2>
-              <p data-aos="fade-left" class="mt-2 text-sm">
+              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
+              <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button data-aos="zoom-out">
+              <button>
                 <a
-                  href="about-us.html"
+                  href="html/about.html"
                   class="
                     relative
                     uppercase
@@ -1043,23 +1007,20 @@
                 >
               </button>
             </div>
-            <div class="w-48 text-center" style="max-width: 280px">
+            <div class="cards w-48 text-center" style="max-width: 280px">
               <img
-                data-aos="fade"
                 class="w-2/12 mt-4 mx-auto"
-                src="../public/services-6.png"
+                src="/public/images/services-6.png"
                 alt=""
               />
-              <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
-                Lorem, ipsum dolor.
-              </h2>
-              <p data-aos="fade-left" class="mt-2 text-sm">
+              <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
+              <p class="mt-2 text-sm">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Sapiente nesciunt repudiandae dicta facere, tempora magnam.
               </p>
-              <button data-aos="zoom-out">
+              <button>
                 <a
-                  href="about-us.html"
+                  href="html/about.html"
                   class="
                     relative
                     uppercase
@@ -1113,22 +1074,19 @@
 
         <div class="text-center w-full relative mx-auto">
           <img
-            data-aos="zoom-out-down"
             class="w-3/12 sm:w-2/12 mx-auto"
-            src="../public/credit3x.png"
+            src="/public/images/credit3x.png"
             alt=""
             style="max-width: 120px"
           />
-          <h2 data-aos="fade-right" class="font-titles text-xl mt-4">
-            Lorem, ipsum dolor.
-          </h2>
-          <p data-aos="fade-left" class="mt-1 mx-auto sm:max-w-md md:max-w-lg">
+          <h2 class="font-titles text-xl mt-4">Lorem, ipsum dolor.</h2>
+          <p class="mt-1 mx-auto sm:max-w-md md:max-w-lg">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
             nesciunt repudiandae dicta facere, tempora magnam.
           </p>
-          <button data-aos="zoom-out-up">
+          <button>
             <a
-              href="about-us.html"
+              href="html/about.html"
               class="
                 relative
                 uppercase
@@ -1157,10 +1115,7 @@
       <!-- Contact -->
 
       <div id="contact" class="py-12 px-6 bg-light text-center xl:py-20">
-        <h1
-          data-aos="fade-right"
-          class="font-titles text-3xl relative xl:text-4xl"
-        >
+        <h1 class="font-titles text-3xl relative xl:text-4xl">
           Communicate with us
         </h1>
         <div
@@ -1176,18 +1131,18 @@
         >
           <!-- Buttons -->
           <button
-            data-aos="zoom-out"
             class="
               w-full
               py-2
-              bg-yellow-300
-              hover:bg-yellow-500
+              text-light
+              bg-accent
+              hover:bg-drk-accent
               shadow-md
               mx-auto
               rounded-md
               uppercase
               border-2 border-transparent
-              hover:border-dark
+              hover:border-accent
             "
             style="max-width: 150px"
           >
@@ -1196,19 +1151,18 @@
             </h2>
           </button>
           <button
-            data-aos="zoom-out"
-            data-aos-delay="200"
             class="
               py-2
-              bg-yellow-300
-              hover:bg-yellow-500
+              text-light
+              bg-accent
+              hover:bg-drk-accent
               shadow-md
               w-full
               mx-auto
               rounded-md
               uppercase
               border-2 border-transparent
-              hover:border-dark
+              hover:border-accent
             "
             style="max-width: 150px"
           >
@@ -1217,18 +1171,18 @@
             </h2>
           </button>
           <button
-            data-aos="zoom-out"
             class="
               py-2
-              bg-yellow-300
-              hover:bg-yellow-500
+              text-light
+              bg-accent
+              hover:bg-drk-accent
               shadow-lg
               w-full
               mx-auto
               rounded-md
               uppercase
               border-2 border-transparent
-              hover:border-dark
+              hover:border-accent
             "
             style="max-width: 150px"
           >
@@ -1237,19 +1191,18 @@
             </h2>
           </button>
           <button
-            data-aos="zoom-out"
-            data-aos-delay="200"
             class="
               py-2
-              bg-yellow-300
-              hover:bg-yellow-500
+              text-light
+              bg-accent
+              hover:bg-drk-accent
               shadow-lg
               w-full
               mx-auto
               rounded-md
               uppercase
               border-2 border-transparent
-              hover:border-dark
+              hover:border-accent
             "
             style="max-width: 150px"
           >
@@ -1259,16 +1212,12 @@
           </button>
         </div>
 
-        <h1
-          data-aos="fade-right"
-          class="font-titles mt-16 text-3xl relative xl:text-4xl"
-        >
+        <h1 class="font-titles mt-16 text-3xl relative xl:text-4xl">
           or send us an email
         </h1>
         <form action="/" class="mt-8">
           <div class="">
             <input
-              data-aos="fade"
               class="
                 block
                 w-9/12
@@ -1285,7 +1234,6 @@
               placeholder="Full Name"
             />
             <input
-              data-aos="fade"
               class="
                 block
                 w-9/12
@@ -1303,7 +1251,6 @@
               placeholder="Email"
             />
             <input
-              data-aos="fade"
               class="
                 block
                 w-9/12
@@ -1323,7 +1270,6 @@
           </div>
 
           <input
-            data-aos="zoom-out-up"
             class="
               cursor-pointer
               uppercase
@@ -1353,18 +1299,35 @@
 
       <!-- Footer -->
 
-      <footer class="py-12 px-6 bg-dark bg-opacity-90 text-light">
+      <footer class="relative py-4 px-6 bg-dark bg-opacity-90 text-light">
         <a
           href="/"
-          class="block no-underline text-4xl font-logo font-bold text-center"
+          class="
+            block
+            no-underline
+            text-2xl
+            lg:text-3xl
+            font-logo font-bold
+            text-center
+          "
           >Solve It</a
         >
-        <p class="text-light text-center font-titles mt-2 text-lg">
+        <h2 class="text-light text-center font-titles mt-2 text-base">
           The best app for problem solving
-        </p>
+        </h2>
 
         <!-- Social media icons -->
-        <div class="mt-8 flex gap-4 justify-center items-center text-lg">
+        <div
+          class="
+            mt-4
+            flex
+            gap-2
+            justify-center
+            items-center
+            text-xs
+            lg:text-sm lg:gap-4
+          "
+        >
           <i
             class="
               fab
@@ -1399,12 +1362,38 @@
             "
           ></i>
         </div>
-        <p class="copyright text-center mt-8">@2021 Rayan Encarnación</p>
+        <p class="copyright text-center mt-8 text-sm font-bold">
+          @2021 Rayan Encarnación
+        </p>
+        <button
+          class="
+            absolute
+            bottom-4
+            right-4
+            w-8
+            h-8
+            p-2
+            font-xs
+            rounded-full
+            flex
+            items-center
+            text-light
+            hover:text-dark
+            justify-center
+            bg-accent
+            border-2 border-drk-accent
+            hover:bg-light hover:border-accent
+            md:right-8 md:bottom-8 md:w-12 md:h-12
+          "
+        >
+          <a href="#top" class="">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </button>
       </footer>
       <!-- Footer end -->
-
-      <!--  Top -->
-      <span id="top" class="absolute top-0"></span>
     </div>
+
+    <script></script>
   </body>
 </html>
