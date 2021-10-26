@@ -1,16 +1,15 @@
-import swiper from "./swiper";
-import AOS, { init } from "aos";
-import "aos/dist/aos.css";
-import toogleTopButton from "./topButton";
-import initMenu from "./toogleMenu";
+import { initMainMenu } from "./js/helpers";
+initMainMenu();
 
-initMenu();
+const logOutBtn = document.querySelector(".log-out");
 
-AOS.init({
-  duration: 800,
-  anchorPlacement: "top-bottom",
-  once: true,
-});
+const logoutConfirmation = () => {
+  let confirmAction = confirm("Are you sure you want to Log out?");
 
-if (window.location.href.slice(22, -5) !== "") return;
-toogleTopButton();
+  if (confirmAction) {
+    localStorage.removeItem("user");
+    window.location.href = "html/login.html";
+  } else return;
+};
+
+logOutBtn.addEventListener("click", logoutConfirmation);
