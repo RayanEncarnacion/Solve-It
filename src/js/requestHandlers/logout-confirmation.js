@@ -9,6 +9,4 @@ const logoutConfirmation = () => {
   } else return;
 };
 
-export default function () {
-  logOutBtn.addEventListener("click", logoutConfirmation);
-}
+logOutBtn.addEventListener("click", logoutConfirmation);
