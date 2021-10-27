@@ -23,12 +23,8 @@ async function displayTicket() {
 
   const ticketsOnDB = res.success ? res.ticket : 0;
 
-  ticketsContainer.innerHTML = "";
-
-  if (ticketsOnDB.length === 0 || ticketsOnDB === undefined) {
-    const noTickets = `<h1 class="font-titles text-2xl text-center mt-8">No tickets solved!</h1>`;
-    mainArea.insertAdjacentHTML("afterbegin", noTickets);
-  } else {
+  if (ticketsOnDB.length) {
+    ticketsContainer.innerHTML = "";
     ticketsOnDB.forEach((ticket) => {
       const ticketTemplate = `
       <div class="ticket relative self-start w-full max-w-lg mx-auto border border-gray-200 px-4 py-2 bg-light text-xs sm:px-6 lg:px-4">
@@ -81,8 +77,6 @@ async function displayTicket() {
   }
 }
 
-displayTicket();
-
 function showAnswer(event) {
   const ticket = event.target.closest(".ticket");
   const showAnswerBtn = event.target;
@@ -108,3 +102,6 @@ function hideAnswer(event) {
   answer.classList.remove("inline-block");
   answer.classList.add("hidden");
 }
+["preload", "unload", "load"].forEach((trigger) =>
+  window.addEventListener(trigger, displayTicket)
+);
