@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "postcss src/styles.css -o public/tailwind.css && parcel build src/index.html src/html/*.html",
-    "start": "parcel src/index.html src/html/*.html"
+    "start": "parcel src/index.html src/html/*.html",
+    "build": "set NODE_ENV=production&&postcss src/styles.css -o public/tailwind.css && parcel build src/index.html src/html/*.html"
   },
   "keywords": [],
   "author": "",
